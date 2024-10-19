@@ -1,28 +1,29 @@
-body {
-    font-family: Arial, sans-serif;
+body, html {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1em;
-    text-align: center;
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #87CEEB 0%, #87CEEB 100%);
+    z-index: -1;
 }
 
-section {
-    margin: 2em;
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
 }
 
-h2 {
-    color: #333;
-}
-
-.project {
-    border: 1px solid #ddd;
-    padding: 1em;
-    margin-bottom: 1em;
-    background-color: #fff;
+.cloud {
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    opacity: 0.7;
 }
