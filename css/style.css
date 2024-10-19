@@ -25,12 +25,12 @@ body, html {
 
 .left-door {
     left: 0;
-    background: url('path_to_your_door_image.jpg') no-repeat center center/cover;
+    background: url('/assets/door.jpg') no-repeat center center/cover;
 }
 
 .right-door {
     right: 0;
-    background: url('path_to_your_door_image.jpg') no-repeat center center/cover;
+    background: url('/assets/door.jpg') no-repeat center center/cover;
     transform: scaleX(-1); /* Mirror the right door */
 }
 
