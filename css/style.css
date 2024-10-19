@@ -1,44 +1,28 @@
-body, html {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    font-family: Arial, sans-serif;
-    height: 100vh;
+    background-color: #f4f4f4;
 }
 
-.door-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background: url('path_to_your_background_image.jpg') no-repeat center center/cover;
-    overflow: hidden;
-}
-
-.door {
-    position: absolute;
-    top: 0;
-    width: 50%;
-    height: 100%;
-    background-size: cover;
-    transition: transform 1s ease-in-out;
-}
-
-.left-door {
-    left: 0;
-    background: url('/assets/door.jpg') no-repeat center center/cover;
-}
-
-.right-door {
-    right: 0;
-    background: url('/assets/door.jpg') no-repeat center center/cover;
-    transform: scaleX(-1); /* Mirror the right door */
-}
-
-.content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
     text-align: center;
-    color: white;
+}
+
+section {
+    margin: 2em;
+}
+
+h2 {
+    color: #333;
+}
+
+.project {
+    border: 1px solid #ddd;
+    padding: 1em;
+    margin-bottom: 1em;
+    background-color: #fff;
 }
