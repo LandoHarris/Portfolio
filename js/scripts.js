@@ -9,6 +9,7 @@ function createCloud() {
     const top = Math.random() * 100;
     const left = -size;
 
+    cloud.style.backgroundColor = 'lightblue';
     cloud.style.width = `${size}px`;
     cloud.style.height = `${size}px`;
     cloud.style.top = `${top}%`;
