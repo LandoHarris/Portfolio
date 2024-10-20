@@ -1,0 +1,126 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+h1 {
+  margin: 1rem 0;
+}
+
+h2 {
+  color: white;
+  opacity: 0;
+  font-size: 5rem;
+  animation: fadeIn 2s ease forwards;
+}
+
+p {
+  font-size: 4rem;
+  opacity: 0;
+  animation: fadeInText 2s ease forwards 3s;
+}
+
+.intro {
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none; /* Disable text selection */
+
+}
+
+main {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: lightcyan;
+  transform: scale(0, 0);
+  animation: animate 1s ease-in forwards 2s;
+  overflow: hidden;
+  user-select: none; /* Disable text selection */
+
+}
+
+.content {
+  width: 100%;
+  text-align: center;
+  overflow-y: auto;
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(0, 0.005);
+  }
+  50% {
+    transform: scaleY(0.005);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(to top , rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.8));
+  transition: background 1s ease-in-out;
+}
+
+/* This will add space after all <p> tags */
+p {
+  margin-bottom: 2rem; /* Adjust this value as needed */
+}
+
+/* New CSS for button */
+.fade-in-button {
+  opacity: 0;
+  animation: fadeIn 2s ease forwards 4s; /* Delayed by 4s */
+  margin-top: 4rem; /* Adjust this value as needed */
+  text-size-adjust: 1225%;
+  user-select: none; /* Disable text selection */
+  border-radius: 100px;
+  transition: background-color 0.3s ease; /* Smooth transition for color change */
+  width: 200px; /* Adjust for larger button width */
+  height: 50px; /* Adjust for larger button height */
+  padding: 1rem 2rem; /* Adjust for larger padding */
+  font-size: 2rem; /* Adjust for larger font size */
+}
+
+/* Hover effect to change background color */
+.fade-in-button:hover {
+color:peachpuff;
+}
+
