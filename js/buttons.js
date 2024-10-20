@@ -4,7 +4,7 @@ const homeButton = document.getElementById('home');
 // Check if elements exist in the DOM before adding event listeners
 if (exploreButton) {
   exploreButton.addEventListener('mousedown', function(event) {
-    window.location.href = "file:///C:/Users/Landon/fleet/Portfolio/about.html";
+    window.location.href = "https://landoharris.github.io/Portfolio/about.html";
   });
 
   exploreButton.addEventListener('mouseover', function(event) {
@@ -18,7 +18,7 @@ if (exploreButton) {
 
 if (homeButton) {
   homeButton.addEventListener('mousedown', function(event) {
-    window.location.href = "file:///C:/Users/Landon/fleet/Portfolio/index.html";
+    window.location.href = "https://landoharris.github.io/Portfolio/index.html";
   });
 
   homeButton.addEventListener('mouseover', function(event) {
