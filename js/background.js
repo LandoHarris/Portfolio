@@ -8,5 +8,10 @@ function changeColor() {
         ${colors[currentColorIndex]}
     `;
 }
+// Set the initial color
+document.querySelector('.background').style.background = `
+    linear-gradient(to top , rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.8)),
+    ${colors[currentColorIndex]}
+`;
 
-setInterval(changeColor, 4000); // Change color every 4 seconds
+setInterval(changeColor, 3000); // Change color every 3 seconds
