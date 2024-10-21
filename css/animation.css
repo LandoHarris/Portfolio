@@ -106,21 +106,40 @@ p {
 
 /* New CSS for button */
 .fade-in-button {
+  display: flex; /* Added */
+  justify-content: center; /* Added */
+  align-items: center; /* Added */
   opacity: 0;
   animation: fadeIn 2s ease forwards 4s; /* Delayed by 4s */
-  margin-top: 4rem; /* Adjust this value as needed */
-  text-size-adjust: 1225%;
   user-select: none; /* Disable text selection */
-  border-radius: 100px;
+  border-radius: 50px;
   transition: background-color 0.3s ease; /* Smooth transition for color change */
-  width: 200px; /* Adjust for larger button width */
-  height: 50px; /* Adjust for larger button height */
+  width: 10px; /* Adjust for larger button width */
+  height: 25px; /* Adjust for larger button height */
   padding: 1rem 2rem; /* Adjust for larger padding */
-  font-size: 2rem; /* Adjust for larger font size */
+  align-self: center;
+  z-index: -1;
 }
 
 /* Hover effect to change background color */
 .fade-in-button:hover {
-color:peachpuff;
+color: peachpuff;
 }
 
+/* Add this CSS to your stylesheet or within a <style> tag */
+@keyframes dropDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animated-text {
+  display: inline-block;
+  animation: dropDown 0.3s forwards;
+  opacity: 0;
+}
