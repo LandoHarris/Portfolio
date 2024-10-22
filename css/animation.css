@@ -102,7 +102,7 @@ main {
 
 /* Add space after all <p> tags */
 p {
-  margin-bottom: 2rem; /* Adjust this value as needed */
+  margin-bottom: 6rem; /* Adjust this value as needed */
 }
 
 /* CSS for GitHub button */
@@ -115,9 +115,9 @@ p {
   user-select: none; /* Disable text selection */
   border-radius: 50px;
   transition: background-color 0.3s ease; /* Smooth transition for color change */
-  width: 10px; /* Adjust for larger button width */
-  height: 25px; /* Adjust for larger button height */
-  padding: 1rem 2rem; /* Adjust for larger padding */
+  width: 10px;
+  height: 25px;
+  padding: 1rem 2rem;
   align-self: center;
   z-index: -1;
 }
@@ -126,15 +126,15 @@ p {
 .linked-in-button {
   display: flex;
   opacity: 0;
-  animation: fadeIn 5s ease forwards 4s;
+  animation: fadeIn 2s ease forwards 5s;/* Delayed by 5s */
   user-select: none;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease; /* Smooth transition for color change */
   position: fixed;
-  top: 200px;
-  left: 375px;
+  top: 500px;
+  left: 40%;
   padding: 1rem;
-  width: 20%;
-  height: 20%;
+  width: 15%;
+  height: 15%;
   z-index: -1;
 }
 
@@ -200,7 +200,7 @@ p {
     justify-content: center;
     align-items: center;
     opacity: 0;
-    animation: fadeIn 6s ease forwards 4s; /* Delayed by 6s */
+    animation: fadeIn 4s ease forwards 5s; /* Delayed by 6s */
     user-select: none; /* Disable text selection */
     border-radius: 25px;
     background-color: transparent; /* Set background to transparent */
