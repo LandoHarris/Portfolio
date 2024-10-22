@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
         event.preventDefault(); // Prevent default navigation behavior
         if (buttonName === 'Contact Button') {
           // Copy preselected email to clipboard
-          navigator.clipboard.writeText('your.email@example.com').then(() => {
+          navigator.clipboard.writeText('landonharris979@gmail.com').then(() => {
             console.log('Email copied to clipboard');
           }).catch(err => {
             console.log('Failed to copy email: ', err);
