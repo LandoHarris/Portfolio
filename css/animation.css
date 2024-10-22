@@ -20,168 +20,8 @@ p {
   opacity: 0;
   animation: fadeInText 2s ease forwards 3s;
 }
-/*opening welcome*/
-.intro {
-  height: 100vh;
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  user-select: none; /* Disable text selection */
 
-}
-/*page starting animation*/
-main {
-  position: absolute;
-  top: 0;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: lightcyan;
-  transform: scale(0, 0);
-  animation: animate 1s ease-in forwards 2s;
-  overflow: hidden;
-  user-select: none; /* Disable text selection */
-
-}
-
-.content {
-  width: 100%;
-  text-align: center;
-  overflow-y: auto;
-}
-
-@keyframes animate {
-  0% {
-    transform: scale(0, 0.005);
-  }
-  50% {
-    transform: scaleY(0.005);
-  }
-  100% {
-    transform: scale(1, 1);
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(50%);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(-50%);
-  }
-}
-
-@keyframes fadeInText {
-  from {
-    opacity: 0;
-    transform: translateY(50%);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-}
-/* gradient changing background*/
-.background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background: linear-gradient(to top , rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.8));
-  transition: background 1s ease-in-out;
-}
-
-/* This will add space after all <p> tags */
-p {
-  margin-bottom: 2rem; /* Adjust this value as needed */
-}
-
-/* css for github button */
-.fade-in-button {
-  display: flex; /* Added */
-  justify-content: center; /* Added */
-  align-items: center; /* Added */
-  opacity: 0;
-  animation: fadeIn 2s ease forwards 4s; /* Delayed by 4s */
-  user-select: none; /* Disable text selection */
-  border-radius: 50px;
-  transition: background-color 0.3s ease; /* Smooth transition for color change */
-  width: 10px; /* Adjust for larger button width */
-  height: 25px; /* Adjust for larger button height */
-  padding: 1rem 2rem; /* Adjust for larger padding */
-  align-self: center;
-  z-index: -1;
-}
-/*css for linked-in link*/
-.linked-in-button {
-  display: flex;
-  opacity: 0;
-  animation:fadeIn 5s ease forwards 4s;
-  user-select: none;
-  transition: background-color 0.3s ease;
-  position: fixed;
-  top: 200px;
-  left: 375px;
-  padding: 1rem;
-  width: 20%;
-  height: 20%;
-  z-index: -1;
-}
-
-/* Hover effect to change background color of text*/
-.fade-in-button:hover {
-color: peachpuff;
-}
-.linked-in-button:hover {
-  color: peachpuff;
-}
-
-/* enjoy text dropdown animation */
-@keyframes dropDown {
-  0% {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-.animated-text {
-  display: inline-block;
-  animation: dropDown 0.3s forwards;
-  opacity: 0;/* Global styles */
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-h1 {
-  margin: 1rem 0;
-}
-
-h2 {
-  color: white;
-  opacity: 0;
-  font-size: 5rem;
-  animation: fadeIn 2s ease forwards;
-}
-
-p {
-  font-size: 4rem;
-  opacity: 0;
-  animation: fadeInText 2s ease forwards 3s;
-}
-/*opening welcome*/
+/* Opening welcome */
 .intro {
   height: 100vh;
   background-color: black;
@@ -190,7 +30,8 @@ p {
   align-items: center;
   user-select: none; /* Disable text selection */
 }
-/*page starting animation*/
+
+/* Page starting animation */
 main {
   position: absolute;
   top: 0;
@@ -247,7 +88,7 @@ main {
   }
 }
 
-/* gradient changing background */
+/* Gradient changing background */
 .background {
   position: absolute;
   top: 0;
@@ -255,16 +96,16 @@ main {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: linear-gradient(to top , rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.8));
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.8));
   transition: background 1s ease-in-out;
 }
 
-/* This will add space after all <p> tags */
+/* Add space after all <p> tags */
 p {
   margin-bottom: 2rem; /* Adjust this value as needed */
 }
 
-/* css for github button */
+/* CSS for GitHub button */
 .fade-in-button {
   display: flex; /* Added */
   justify-content: center; /* Added */
@@ -281,7 +122,7 @@ p {
   z-index: -1;
 }
 
-/* css for linked-in link */
+/* CSS for LinkedIn link */
 .linked-in-button {
   display: flex;
   opacity: 0;
@@ -305,7 +146,7 @@ p {
   color: peachpuff;
 }
 
-/* enjoy text dropdown animation */
+/* Enjoy text dropdown animation */
 @keyframes dropDown {
   0% {
     transform: translateY(-100%);
@@ -317,10 +158,29 @@ p {
   }
 }
 
+/* Contact button text animation from bottom */
+@keyframes dropUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .animated-text {
   display: inline-block;
+  opacity: 0; /* Hidden initially */
+}
+
+.animated-text.drop-down {
   animation: dropDown 0.3s forwards;
-  opacity: 0;
+}
+
+.animated-text.drop-up {
+  animation: dropUp 0.3s forwards;
 }
 
 /* Additional CSS Variable for animation duration */
@@ -334,35 +194,25 @@ p {
 }
 
 /* CSS for Contact button */
+/* CSS for Contact button */
 .contact-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  animation: fadeIn 6s ease forwards 4s; /* Delayed by 6s */
-  user-select: none; /* Disable text selection */
-  border-radius: 50px;
-  transition: background-color 0.3s ease; /* Smooth transition for color change */
-  width: 100px; /* Adjust for button width */
-  height: 40px; /* Adjust for button height */
-  padding: 1rem 2rem; /* Adjust for padding */
-  align-self: center;
-  z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 6s ease forwards 4s; /* Delayed by 6s */
+    user-select: none; /* Disable text selection */
+    border-radius: 25px;
+    background-color: transparent; /* Set background to transparent */
+    transition: background-color 0.3s ease; /* Smooth transition for color change */
+    width: 100px; /* Adjust for button width */
+    height: 40px; /* Adjust for button height */
+    padding: 0.5rem 1.5rem; /* Adjust for padding */
+    align-self: center;
+    z-index: -1;
 }
 
 /* Hover effect to change background color of the contact button */
 .contact-button:hover {
-  background-color: #005F6A; /* Darken color on hover */
-  cursor: pointer; /* Pointer cursor on hover */
-}
-}
-
-/* Additional CSS Variable for animation duration */
-:root {
-  --animation-duration: 0.1s; /* Default animation delay for each letter */
-}
-
-/* Button hover transition for smooth scaling */
-#explore, #linkedin {
-  transition: transform 0.2s ease-in-out;
+color:peachpuff;
 }
