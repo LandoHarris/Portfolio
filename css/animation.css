@@ -16,9 +16,9 @@ h2 {
 }
 
 p {
-  font-size: 4rem;
-  opacity: 0;
-  animation: fadeInText 2s ease forwards 3s;
+    font-size: 1.25em;
+    opacity: 0;
+    animation: fadeInText 2s ease forwards 3s;
 
   }
 
@@ -32,7 +32,7 @@ p {
   user-select: none; /* Disable text selection */
 }
 
-/* Page starting animation */
+/* Objects on the page */
 main {
   position: absolute;
   top: 0;
@@ -45,19 +45,10 @@ main {
   background-color: lightcyan;
   transform: scale(0, 0);
   animation: animate 1s ease-in forwards 2s;
-  overflow: hidden;
   user-select: none; /* Disable text selection */
 }
 
-.content {
-  text-align: center;
-  overflow-y: auto;
-  position: absolute;
-  top: 0;
-  height: 100vh;
-  width: 100%;
-  align-items: center;
-}
+
 
 @keyframes animate {
   0% {
@@ -108,36 +99,64 @@ main {
 
 
 .fade-in-button {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     opacity: 0;
-     animation: fadeIn 2s ease forwards 4s;
-     user-select: none;
-     border-radius: 50px;
-     transition: background-color 0.3s ease;
-     width: 10px;
-     height: 25px;
-     padding: 1rem 2rem;
-     align-self: center;
-     position: relative;
-     z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards 5s;
+    user-select: none;
+    transition: background-color 0.3s ease;
+    position: fixed;
+    top: 20%;
+    left: 10%;
+    padding: 1rem;
+    width: 10%;
+    height: 10%;
+    z-index: 1;
  }
 
  .linked-in-button {
      display: flex;
+     justify-content: center;
+     align-items: center;
      opacity: 0;
      animation: fadeIn 2s ease forwards 5s;
      user-select: none;
      transition: background-color 0.3s ease;
      position: fixed;
-     top: 500px;
-     left: 46.5%;
+     top: 20%;
+     right: 10%;
      padding: 1rem;
-     width: 15%;
-     height: 15%;
+     width: 20%;
+     height: 20%;
      z-index: 1;
+     wrap-option: wrap;
+     border: solid white;
+     border-radius: 15px;
+
  }
+
+.contact-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards 5s;
+    user-select: none;
+    transition: background-color 0.3s ease;
+    position: fixed;
+    bottom: inherit;
+    left: inherit;
+    padding: 1rem;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    wrap-option: wrap;
+    border: solid white;
+    border-radius: 15px;
+}
+
+
 
 /* Hover effect to change background color of text */
 .fade-in-button:hover {
@@ -146,7 +165,9 @@ main {
 .linked-in-button:hover {
   color: peachpuff;
 }
-
+.contact-button:hover {
+    color:peachpuff;
+}
 /* Enjoy text dropdown animation */
 @keyframes dropDown {
   0% {
@@ -190,30 +211,7 @@ main {
 }
 
 /* Button hover transition for smooth scaling */
-#explore, #linkedin {
+#github, #linkedin {
   transition: transform 0.2s ease-in-out;
 }
 
-/* CSS for Contact button */
- .contact-button {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     opacity: 0;
-     animation: fadeIn 4s ease forwards 5s;
-     user-select: none;
-     border-radius: 25px;
-     background-color: transparent;
-     transition: background-color 0.3s ease;
-     width: 100px;
-     height: 40px;
-     padding: 0.5rem 1.5rem;
-     align-self: center;
-     z-index: 1;
-     margin-top: -200px;
- }
-
-/* Hover effect to change background color of the contact button */
-.contact-button:hover {
-color:peachpuff;
-}

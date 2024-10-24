@@ -4,35 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landon's Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animation.css">
-
 </head>
+
+
 <div class="container">
     <div class=intro>
     <h2>Welcome to my Portfolio</h2>
 </div>
+
 <main>
+<!-- background that changes color over time-->
 <div class="background"></div>
 
-<div class=content>
-    <p style>I'm Landon</p>
+    <!--------------------------------------------------------------------------------*/ -->
+    <!--About Me Section-->
+    <!--------------------------------------------------------------------------------*/ -->
+    <div class="grid-container about-me-grid">
+
+    <div class="grid-item1 flex-container" >
+
+        <div class="flex-item">
+
+            <h1 style="text-align: center"> Landon Harris</h1>
+
+            <p style="text-align: center">
+                I'm a software engineer, I'm still learning.
+                This is one of my projects to make a somewhat
+                decent portfolio page. I hope you enjoy the things I've made.
+                I hope to apply some of what I learn later on to improve my skills and
+                this page. Feel free to message me with any suggestions or criticism
+                on any of my linked platforms.
+            </p>
+
+        </div>
+    </div>
+    <!--------------------------------------------------------------------------------*/ -->
+        <!--------------------------------------------------------------------------------*/ -->
+        <!--GitHub Section -->
+        <!--------------------------------------------------------------------------------*/ -->
+
+        <div class="grid-container github-grid">
+
+        <div class="github-flex-item">
+
+                <div id="github" class="fade-in-button"><img src="assets/github-mark-white.png" alt=""></div>
+
+        </div>
+
+    </div>
+
+        <!--------------------------------------------------------------------------------*/ -->
+        <!-- Contact Section-->
+        <!--------------------------------------------------------------------------------*/ -->
+
+    <div class="grid-container contact-grid ">
+        <!--Contact Section -->
+        <div class="contact-flex-item">
+
+            <button id="contact" class="contact-button">Email</button>
+
+        </div>
+
+    </div>
+        <!--------------------------------------------------------------------------------*/ -->
+        <!--Linked In Section -->
+        <!--------------------------------------------------------------------------------*/ -->
+
+    <div class="grid-container linked-in-grid ">
+        <!--LinkedIn Section-->
+        <div class="linked-in-flex-item">
+
+            <div id="linkedIn" class="linked-in-button"><img src="assets/LinkedIn3.png" alt=""></div>
+
+
+        </div>
+
+    </div>
+    <!--------------------------------------------------------------------------------*/ -->
+
 </div>
-
-<div id="explore" class="fade-in-button"><img src="assets/github-mark-white.png" alt=""></div>
-<div id="linkedIn" class="linked-in-button"><img src="assets/LinkedIn.png" alt=""></div>
-<button id="contact" class="contact-button">Contact</button>
-<! -- *
-add contact stuff-something with email
-
-add about me stuff
-
-add div elements for the foreground-->
-
 </main>
+    <!--------------------------------------------------------------------------------*/ -->
+    <!-- Scripts Section-->
+    <!--------------------------------------------------------------------------------*/ -->
 
-
-    <!-- Move scripts to the end of the body to ensure they load after the DOM is fully parsed -->
     <script src="js/background.js"></script>
     <script src="js/buttons.js"></script>
+    <!--------------------------------------------------------------------------------*/ -->
+
 </div>
 </html>

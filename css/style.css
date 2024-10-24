@@ -1,0 +1,137 @@
+/*Grid -----------------------------------------------------------*/
+/*------------------------------------------------------------------------------*/
+
+.grid-container{
+    max-width: 1000px;
+    height: 650px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 100px);
+    gap: 10px;
+    overflow: hidden;
+
+}
+ .grid-item{
+     background-color: lightgray;
+     text-align: center;
+     border: 1px solid black;
+ }
+ .about-me-grid {
+    position: relative;
+     top: 0;
+     left: 0;
+     width: 50fr;
+     min-width: 25%;
+     max-width: 30%;
+ }
+/*------------------------------------------------------------------------------*/
+/*GitHub Section*/
+/*------------------------------------------------------------------------------*/
+.github-grid {
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+    height: auto;
+    width: auto;
+    z-index: 1;
+    align-content: center;
+}
+.github-flex-item {
+    position: relative;
+    top: 0;
+    right: 10px;
+    height: auto;
+    width: auto;
+    z-index: 1;
+    flex: 1;
+}
+/*------------------------------------------------------------------------------*/
+/*Contact Section*/
+/*------------------------------------------------------------------------------*/
+
+.contact-grid {
+    position: relative;
+    bottom: 10px;
+    left: 20px;
+    height: 15px;
+    width: 15px;
+    z-index: 1;
+    align-content: center;
+
+}
+.contact-flex-item {
+    position: relative;
+    bottom: 20px;
+    right: 20px;
+    height: 15px;
+    width: 15px;
+    z-index: 1;
+    flex: 1;
+}
+/*------------------------------------------------------------------------------*/
+/*LinkedIn Section*/
+/*------------------------------------------------------------------------------*/
+.linked-in-grid {
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+    height: auto;
+    width: auto;
+    z-index: 1;
+    align-content: center;
+
+}
+.linked-in-flex-item {
+    position: relative;
+    bottom: 20px;
+    right: 20px;
+    height: auto;
+    width: auto;
+    z-index: 1;
+    flex: 1;
+}
+
+/*------------------------------------------------------------------------------*/
+/*Flexbox -----------------------------------------------------------*/
+.flex-container {
+    display: flex;
+    flex: 1;
+}
+
+.flex-item {
+    flex: 1;
+    border: 1px solid black;
+}
+/*
+.flex-item1 {
+    flex: 1;
+    border: 1px solid Blue;
+}
+.flex-item2 {
+    flex: 1;
+    border: 1px solid red;
+}
+.flex-item3 {
+    flex: 1;
+    border: 1px solid green;
+}
+*/
+
+/*about me section*/
+.grid-item1 {
+    flex-direction: column
+}
+/*github section*/
+.grid-item2 {
+
+}
+/*linkedin section*/
+.grid-item3 {
+
+}
+/*Email Contact Section*/
+.grid-item4 {
+
+}

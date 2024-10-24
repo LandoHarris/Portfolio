@@ -2,11 +2,11 @@ document.addEventListener('DOMContentLoaded', function() {
   console.log("DOM fully loaded and parsed");
 
   // Get buttons by ID
-  const exploreButton = document.getElementById('explore');
+  const githubButton = document.getElementById('github' );
   const linkedinButton = document.getElementById('linkedIn');
   const contactButton = document.getElementById('contact'); // Get the contact button by ID
 
-  console.log("explore Button:", exploreButton);
+  console.log("github Button:", githubButton);
   console.log("linkedin Button:", linkedinButton);
   console.log("contact Button:", contactButton); // Log the contact button
 
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
           // Perform the "Copied" animation
           animateText(button, buttonText, 'drop-down', () => {
             // After the "Copied" animation, revert back to "Contact" with animation from bottom
-            animateText(button, 'Contact', 'drop-up');
+            animateText(button, 'Email', 'drop-up');
           });
         } else {
           console.log(`Clicked on ${buttonName}, navigating shortly...`);
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // Add events to buttons
-  addEventsToButton(exploreButton, 'Explore Button', 'Enjoy', "https://github.com/LandoHarris", 0.80);
+  addEventsToButton(githubButton, 'githubButton', 'Enjoy', "https://github.com/LandoHarris", 0.80);
   addEventsToButton(linkedinButton, 'LinkedIn Button', 'Enjoy', "https://www.linkedin.com/in/landon-harris-55190a256/", 0.90);
   addEventsToButton(contactButton, 'Contact Button', 'Copied', '', 1.05); // Add event for contact button
 });
